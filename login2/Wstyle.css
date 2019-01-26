@@ -1,0 +1,148 @@
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+    background-color: #1a6487;
+}
+
+a {
+    text-decoration: none;
+}
+
+header{
+  height: 20%;
+}
+.main-container {
+  background-color: #1a6487;
+  padding-top: 21px; /* magic sauce, if lower than 21 heading breaks */
+}
+
+.main-container h2 {
+    font-family: arial;
+    font-size: 40px;
+    color: #111;
+    line-height: 50px;
+    text-align: center;
+
+}
+
+.main-wrapper {
+    margin: 0 auto;
+    width: 450px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*signup.php*/
+
+.signup-form {
+    width: 400px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.signup-form input {
+    width: 90%;
+    height: 40px;
+    padding: 0px 5%;
+    margin-bottom: 4px;
+    background-color: #fff;
+    font-family: arial;
+    font-size: 16px;
+    color: #111;
+    line-height: 40px;
+    border-width: 1px;
+    border-color: lightgrey;
+    border-style: outset;
+}
+
+.signup-form textarea#descr {
+    width: 90%;
+    padding: 0px 5%;
+    margin-bottom: 4px;
+    border-width: 1px;
+    border-color: lightgrey;
+    border-style: outset;
+    background-color: #fff;
+    font-family: arial;
+    font-size: 16px;
+    color: #111;
+    line-height: 30px;
+}
+
+.signup-form button {
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    height: 40px;
+    border: none;
+    background-color: #1a6487;
+    font-family: arial;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.signup-form button:hover {
+    background-color: #111;
+}
+
+.errorText{
+  padding: 10px;
+  color: red;
+}
+
+.successText{
+  padding: 10px;
+  color: green;
+}
+
+
+footer {
+	margin-top: 1em;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  background-color: #1a6487;
+}
+
+.footer-box {
+	padding: 1em;
+	line-height: 16px;
+}
+
+.footer-box>p {
+  color: gray;
+	font-size: 14px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+#reglog {
+  text-align: center;
+}

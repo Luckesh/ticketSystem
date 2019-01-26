@@ -1,0 +1,67 @@
+
+CREATE OR REPLACE VIEW pohlad AS SELECT kniha.nazov, cena, pocetKusov AS "ks", zaner, vydavatelstvo.nazov AS vydavatelstvo, CONCAT(autor.meno," ",autor.priezvisko) AS "autor" FROM kniha
+JOIN zaner ON kniha.IDzaner=zaner.IDzaner
+JOIN vydavatelstvo ON kniha.IDvydavatelstvo=vydavatelstvo.IDvydavatelstvo
+JOIN knihaAutor ON kniha.IDkniha=knihaAutor.IDkniha
+JOIN autor ON knihaAutor.IDautor=autor.IDautor;
+
+
+INSERT INTO solved_tickets (ucebna_id,pc_id,descr,autor,submitDate,solveDate)
+VALUES (12,13,"joj","RadovanRepovsky","2018-10-24 12:19:02",CURRENT_TIMESTAMP);
+
+
+SELECT user_email FROM ucebne
+JOIN users ON IDucitel=user_id WHERE ucebna="28A";
+
+
+zadanie
+
+tabulky:
+student -idstudent,idtrieda,meno, priezvisko
+trieda -idtrieda,nazov
+GROUP BY
+
+
+2 pouzivatelia
+GRANT
+1 - superpouzivatel-localhost
+2 - iba select
+
+
+SELECT ucebna, COUNT(IDticket) AS "pocet ticketov" FROM ucebne
+JOIN solved_tickets ON ucebna=ucebna_id
+GROUP BY ucebna;
+
+GRANT SELECT ON knihkupectvo.pohlad TO josko@'%' IDENTIFIED BY 'josko';
+
+
+Lands
+10 Island
+2 Field of Ruin
+4 Tolaria West
+1 Ghost Quarter
+4 River of Tears
+1 Bojuka Bog
+Creatures
+2 Architects of Will
+4 Curator of Mysteries
+4 Street Wraith
+4 Striped Riverwinder
+Spells
+2 Supreme Will
+2 Mana Leak
+4 As Foretold
+4 Ancestral Vision
+4 Living End
+4 Remand
+4 Cryptic Command
+
+Sideboard
+4 Leyline of the Void
+2 Dismember
+3 Nimble Obstructionist
+1 Chalice of the Void
+1 Tormod’s Crypt
+2 Hurkyl’s Recall
+2 Dispel
+2 Faerie Macabre
